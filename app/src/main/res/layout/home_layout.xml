@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:weightSum="1"
+    android:orientation="vertical"
+    tools:context=".view.HomeActivity">
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.81">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5"
+            android:gravity="center">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appBarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fitsSystemWindows="true">
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:id="@+id/collapsing_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                        app:contentScrim="@color/purple"
+                        app:expandedTitleTextAppearance="@android:color/transparent"
+                        android:fitsSystemWindows="true">
+
+                        <!--<ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/cover"
+                            app:layout_collapseMode="parallax"/>-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:weightSum="3"
+                            android:background="@drawable/bottom_curved_blue"
+                            android:orientation="vertical"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.8"
+                                android:weightSum="3"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.4"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:weightSum="3">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2.2"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <androidx.appcompat.widget.SearchView
+                                            android:id="@+id/main_searchbar"
+                                            android:layout_width="match_parent"
+                                            android:visibility="visible"
+                                            android:background="@drawable/bg_white_rounded"
+                                            android:layout_height="match_parent"/>
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/tool_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                            android:layout_marginTop="20dp"
+                            app:layout_collapseMode="pin">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="2"
+                                android:orientation="horizontal"
+                                >
+                                //back button
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.3"
+                                    android:orientation="horizontal"
+                                    android:gravity="center|left">
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white_back"
+                                        />
+
+                                </LinearLayout>
+                                //seacrh bar
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:weightSum="3">
+
+                                    <androidx.appcompat.widget.SearchView
+                                        android:id="@+id/searchviewToolbar"
+                                        android:layout_width="match_parent"
+                                        android:visibility="gone"
+                                        android:background="@drawable/bg_white_rounded"
+                                        android:layout_weight="2"
+                                        android:layout_height="0dp"/>
+
+
+                                </LinearLayout>
+                                //search button
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.3"
+                                    android:orientation="horizontal"
+                                    android:layout_marginRight="15dp"
+                                    android:gravity="center|right">
+                                    <ImageView
+                                        android:id="@+id/search_img"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/search"
+                                        />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.appcompat.widget.Toolbar>
+
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                </com.google.android.material.appbar.AppBarLayout>
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/main_scroll_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/custom_refresh_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:weightSum="3"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"/>
+                            <com.tool.customfonts.MyTextView_SF_Pro_Display_Bold
+                                android:layout_width="0dp"
+                                android:text="@string/trendingnow"
+                                android:textColor="@color/welocme"
+                                android:textSize="20sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.3"/>
+
+                            <com.tool.customfonts.MyTextView_SF_Pro_Display_Regular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_weight="0.5"
+                                android:textSize="15sp"
+                                android:textColor="@color/seeall"
+                                android:text="@string/seeall"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"/>
+
+                        </LinearLayout>
+                        //trending recyclerview
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/trendingnowRecylceview"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:weightSum="3"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"/>
+                            <com.tool.customfonts.MyTextView_SF_Pro_Display_Bold
+                                android:layout_width="0dp"
+                                android:text="Tools To Be Rented"
+                                android:textColor="@color/welocme"
+                                android:textSize="20sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.3"/>
+
+                            <com.tool.customfonts.MyTextView_SF_Pro_Display_Regular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_weight="0.5"
+                                android:textSize="15sp"
+                                android:textColor="@color/seeall"
+                                android:text="@string/seeall"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"/>
+
+                        </LinearLayout>
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:id="@+id/flex_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            app:flexWrap="wrap"
+                            >
+
+                        </com.google.android.flexbox.FlexboxLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_margin="15dp"
+                            tools:listitem="@layout/recycler_req_list_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+
+
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:layout_weight="0.12"
+        android:orientation="vertical"
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@color/transparent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    app:menu="@menu/navigation"
+                    android:background="@color/transparent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:padding="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/fab_border">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/add_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:elevation="0dp"
+                    android:src="@drawable/ic_add_black_24dp"
+                    app:fabSize="normal"
+                    app:elevation="0dp"/>
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/soft_key_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:orientation="vertical"
+        android:background="@color/intro_description_color">
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

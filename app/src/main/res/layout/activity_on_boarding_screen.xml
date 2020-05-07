@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:background="@drawable/onboardbg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@drawable/logo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="0dp">
+
+
+        </LinearLayout>
+
+        <com.tool.customfonts.MyTextView_SF_Pro_Display_Bold
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/onboard"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_text"
+            android:paddingRight="@dimen/padding_text"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/slide_title"
+            android:textStyle="bold" />
+
+        <com.tool.customfonts.MyTextView_SF_Pro_Display_Medium
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="@string/onboard_subtitle"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/slide_desc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:layout_weight="1.2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1.1"
+                android:layout_height="0dp"
+                android:background="@drawable/button_get_start"
+                android:textColor="#ffffff"
+                android:text="@string/get_started"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1.1"
+                android:layout_height="0dp"
+                android:background="@drawable/button_login"
+                android:textColor="#ffffff"
+                android:text="@string/login"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

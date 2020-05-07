@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="1dp" />
+            <stroke
+                android:color="@color/checkboxcolor" />
+            <gradient
+                android:startColor="@color/checkboxcolor"
+                android:centerColor="@color/checkboxcolor"
+                android:endColor="@color/checkboxcolor"
+                android:angle="270" />
+            <size
+                android:height="28dp"
+                android:width="28dp" />
+            <solid android:color="@color/checkboxcolor" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">350dp</dimen>
+    <dimen name="slide_title">22dp</dimen>
+    <dimen name="slide_desc">14dp</dimen>
+    <dimen name="desc_padding">20dp</dimen>
+
+    <dimen name="default_textsize">13sp</dimen>
+    <dimen name="material_chip_height">32dp</dimen>
+    <dimen name="min_horizontal_spacing">8dp</dimen>
+    <dimen name="vertical_spacing">8dp</dimen>
+
+    <dimen name="padding_text">20dp</dimen>
+
+</resources>

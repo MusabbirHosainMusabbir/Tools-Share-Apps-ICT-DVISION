@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="250dp"
+    android:weightSum="3"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_weight="1.6"
+        android:weightSum="3"
+        android:background="@drawable/rectangle_1"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_weight="0.7">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"
+                android:text="Free Delivery"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:background="@drawable/textview_bg"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"/>
+
+            <ImageView
+                android:id="@+id/favourites"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.4"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"/>
+        <com.tool.customfonts.MyTextView_SF_Pro_Display_Bold
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="French Fries"
+            android:textColor="@color/welocme"
+            android:layout_weight="0.7"/>
+        <com.tool.customfonts.MyTextView_SF_Pro_Display_Light
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Baridhara,Dhaka"
+            android:textColor="@color/welocme"
+            android:layout_weight="0.8"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_weight="0.8">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:background="@drawable/bg_text"
+                android:layout_height="match_parent"
+                android:text="2.5"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:text=""/>
+
+            <com.tool.customfonts.MyTextView_SF_Pro_Display_Regular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:text="‎৳2 Per Day"
+                android:textColor="@color/subtext" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

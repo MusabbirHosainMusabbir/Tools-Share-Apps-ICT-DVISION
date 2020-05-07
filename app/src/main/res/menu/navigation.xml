@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/navigation_rental"
+        android:icon="@drawable/ic_post"
+        app:showAsAction="ifRoom"
+        android:title="Rentals" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/person" />
+
+</menu>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeActivity">
+
+
+    <FrameLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="6"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="4"
+                    android:gravity="center|top"
+                    android:orientation="vertical"
+                    android:background="@drawable/top_layout_bg"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="0.5">
+
+                        <com.tool.customfonts.MyTextView_sfuitext_regular
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/home_drop_text"
+                            android:layout_height="match_parent"
+                            android:text="@string/deliveryaddress"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:scaleY="0.3"
+                            android:scaleX="0.4"
+                            android:background="@drawable/dropdown"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="0.7">
+
+                        <com.tool.customfonts.MyTextView_sfuitext_regular
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:textSize="24sp"
+                            android:textColor="@color/home_drop_text"
+                            android:layout_height="match_parent"
+                            android:text="@string/imlookingfora"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1.1">
+
+                        <androidx.appcompat.widget.SearchView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/bg_white_rounded"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|bottom"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="2.9"
+                android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:orientation="vertical"
+                     android:layout_height="wrap_content">
+
+                     <androidx.recyclerview.widget.RecyclerView
+                         android:id="@+id/custom_refresh_recycler_view"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"/>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="20dp"/>
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:weightSum="3"
+                             android:orientation="horizontal">
+
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="0.1"/>
+                             <com.tool.customfonts.MyTextView_SF_Pro_Display_Bold
+                                 android:layout_width="0dp"
+                                 android:text="@string/trendingnow"
+                                 android:textColor="@color/welocme"
+                                 android:textSize="20sp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="2.3"/>
+
+                             <com.tool.customfonts.MyTextView_SF_Pro_Display_Regular
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:textAlignment="center"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:layout_weight="0.5"
+                                 android:textSize="15sp"
+                                 android:textColor="@color/seeall"
+                                 android:text="@string/seeall"
+                                 />
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="0.1"/>
+
+                         </LinearLayout>
+                            //trending recyclerview
+                         <androidx.recyclerview.widget.RecyclerView
+                             android:id="@+id/trendingnowRecylceview"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"/>
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="20dp"/>
+
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:weightSum="3"
+                             android:orientation="horizontal">
+
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="0.1"/>
+                             <com.tool.customfonts.MyTextView_SF_Pro_Display_Bold
+                                 android:layout_width="0dp"
+                                 android:text="@string/popularfoods"
+                                 android:textColor="@color/welocme"
+                                 android:textSize="20sp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="2.3"/>
+
+                             <com.tool.customfonts.MyTextView_SF_Pro_Display_Regular
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:textAlignment="center"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:layout_weight="0.5"
+                                 android:textSize="15sp"
+                                 android:textColor="@color/seeall"
+                                 android:text="@string/seeall"
+                                 />
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="0.1"/>
+
+                         </LinearLayout>
+                         //popular foods recy
+
+                         <androidx.recyclerview.widget.RecyclerView
+                             android:id="@+id/popularfoodsRecylceview"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"/>
+
+                            //gap
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="20dp"/>
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:weightSum="3"
+                             android:orientation="horizontal">
+
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="0.1"/>
+                             <com.tool.customfonts.MyTextView_SF_Pro_Display_Bold
+                                 android:layout_width="0dp"
+                                 android:text="Tools To Be Rented"
+                                 android:textColor="@color/welocme"
+                                 android:textSize="20sp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="2.3"/>
+
+                             <com.tool.customfonts.MyTextView_SF_Pro_Display_Regular
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:textAlignment="center"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:layout_weight="0.5"
+                                 android:textSize="15sp"
+                                 android:textColor="@color/seeall"
+                                 android:text="@string/seeall"
+                                 />
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="0.1"/>
+
+                         </LinearLayout>
+                         <com.google.android.flexbox.FlexboxLayout
+                             android:id="@+id/flex_layout"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             app:flexWrap="wrap"
+                             >
+
+                         </com.google.android.flexbox.FlexboxLayout>
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="20dp"/>
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:weightSum="3"
+                             android:orientation="horizontal">
+
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="0.1"/>
+                             <com.tool.customfonts.MyTextView_SF_Pro_Display_Bold
+                                 android:layout_width="0dp"
+                                 android:text="@string/yourfavouritetools"
+                                 android:textColor="@color/welocme"
+                                 android:textSize="20sp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="2.3"/>
+
+                             <com.tool.customfonts.MyTextView_SF_Pro_Display_Regular
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:textAlignment="center"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:layout_weight="0.5"
+                                 android:textSize="15sp"
+                                 android:textColor="@color/seeall"
+                                 android:text="@string/seeall"
+                                 />
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="0.1"/>
+
+                         </LinearLayout>
+
+                         <androidx.recyclerview.widget.RecyclerView
+                             android:id="@+id/favouriteToolsRecylceview"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"/>
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="50dp"/>
+
+                 </LinearLayout>
+
+
+                 </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        </FrameLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                app:menu="@menu/navigation"
+                android:background="@color/colorbottom" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/fab_border">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:elevation="0dp"
+                android:src="@drawable/ic_add_black_24dp"
+                app:fabSize="normal"
+                app:elevation="0dp"/>
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

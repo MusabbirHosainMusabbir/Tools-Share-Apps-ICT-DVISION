@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ToolsShare</string>
+
+    <string name="welcome_bg_1_header">Rent Your Urgent Tools</string>
+    <string name="welcome_bg_1_sub_header">Order food from online Nibble super fast food delivery to your home or office Check menu,ratings and reviews</string>
+
+    <string name="welcome_bg_2_header">Earn with your unused Tools</string>
+    <string name="welcome_bg_2_sub_header">Order food from online Nibble super fast food delivery to your home or office Check menu,ratings and reviews</string>
+
+    <string name="welcome_bg_3_header">Save a lots of money</string>
+    <string name="welcome_bg_3_sub_header">Order food from online Nibble super fast food delivery to your home or office Check menu,ratings and reviews</string>
+
+    <string name="onboard">Share &amp; Rent Anytime</string>
+    <string name="onboard_subtitle">Order from your nearby best restaurant in the town. you can easily order from anywhere,anytime</string>
+
+    <string name="get_started">Get Started</string>
+    <string name="login">Login</string>
+
+    <string name="create_account">Create an account</string>
+
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="location">LOCATION</string>
+    <string name="createaccount">CREATE ACCOUNT</string>
+    <string name="signinto">Sign in to continue</string>
+    <string name="usecurrentlocation">Use Current Location</string>
+    <string name="login_text">Sign in</string>
+    <string name="forgetpassword">Forgot password?</string>
+    <string name="newuser">New user?</string>
+    <string name="signup">Sign up</string>
+    <string name="deliveryaddress">Delivery Address</string>
+    <string name="imlookingfora">I\'m Looking for a...</string>
+
+    <string name="home">Home</string>
+    <string name="post">Post</string>
+    <string name="search">Search</string>
+    <string name="person">Person</string>
+
+    <string name="seeall">See all</string>
+    <string name="trendingnow">Trending Now</string>
+    <string name="popularfoods">Popular Foods</string>
+    <string name="recentltyviewed">Recentlty Viewed</string>
+    <string name="yourfavouritetools">Your Favourite Tools</string>
+    <string name="registered_emailid">Please enter your Registered Email Id below:</string>
+</resources>
